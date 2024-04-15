@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+LOGFILE="$PWD"/outputs/output.log
+FLASK_APP="app.py"
+
+if [ "$(echo "$FILE1" | awk -F"/" '{print $NF}')" == $FLASK_APP ] 
+	then
+	nohup python3 "$1" > $LOGFILE 2>&1
+	shopt -s huponexit
+else
+	nohup python3 ${1:+"$@"} > $LOGFILE 2>&1
+	shopt -s huponexit
+fi
+

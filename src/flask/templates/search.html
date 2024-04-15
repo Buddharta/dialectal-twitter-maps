@@ -1,0 +1,34 @@
+
+{% extends "index.html" %}
+{% block search %}
+<center>
+  <p><strong>Searched Term: {{ term }}</strong></p>
+</center>
+<hr style="border:2px">
+      {% for dir in data %}
+      <div class="card">
+	<div class="card-body">
+          <p>
+	    User: {{ dir["user"]["name"] }},  Screen Name: {{dir["user"]["screen_name"] }},  id: {{ dir["user"]["id"] }}
+	  <p>
+	  <hr style="border:1px dashed gray">
+	  <p>
+	      <b>Tweet:</b>
+	      {{ dir["tweet"]["text"] }}
+	  </p>
+	  <br>
+	  <p>
+	    id: {{ dir["tweet"]["tweet_id"] }}, created at:{{ dir["tweet"]["created_at"] }}, <a href={{ dir["tweet"]["url"] }}>tweet link</a>
+
+	  </p>
+	  <hr style="border:1px dashed gray">
+	  <p>
+	      Location data: {{ dir["place"]["full_name"] }}, {{ dir["place"]["country"] }}
+	      <br>
+	      id:{{ dir["place"]["id"] }} <a href={{ dir["place"]["url"] }}>json link</a>
+	  </p>
+	  <hr style="border:2px">
+	</div>
+      </div>
+      {% endfor %}
+{% endblock search %}
