@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 LOGFILE="$PWD"/outputs/output.log
-FLASK_APP="app.py"
+FLASK_APP="tweet-search-app.py"
 
 if [ "$(echo "$FILE1" | awk -F"/" '{print $NF}')" == $FLASK_APP ] 
 	then
