@@ -25,6 +25,7 @@ MAX_AUTO_RECONNECT_ATTEMPTS = 5
 client = MongoClient(uri, socketTimeoutMS=90000000, connectTimeoutMS=90000000)
 db = client.twitterdb
 collection = db.tweetsMexico
+
 conceptos={
     'esquite':['esquite', 'trolelote', 'chasca', 'elote en vaso', 'vasolote', 'elote feliz', 'coctel de elote', 'elote desgranado'], 
     'bolillo':['bolillo', 'birote'], 
@@ -46,6 +47,7 @@ conceptos={
     'escusado':['retrete', 'escusado', 'inodoro', 'WC'], 
     'brasier':['brasier', 'chichero']  
 }
+
 def make_query(term):
     match term:
         case "chasca":

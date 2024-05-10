@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import pandas as pd
 import numpy as np
 import csv
@@ -20,7 +20,8 @@ print(f"File path: {file_dir}")
 print(f"Processing {fname}...")
 
 HOME=os.environ["HOME"]
-DATA_DIR=os.path.join(HOME,"repos/dialectic-twitter-maps-generator/data")
+WD=os.environ["PWD"]
+DATA_DIR=os.path.join(WD,"data")
 AGEEML_file=os.path.join(DATA_DIR,'Extra/AGEEML_2023821859377.csv')
 AGEEML_data=pd.read_csv(AGEEML_file,
                         dtype={'NOM_ENT':str,'NOM_MUN':str,'NOM_LOC':str,'AMBITO':str,'LON_DECIMAL':np.float16,'LAT_DECIMAL':np.float16,'POB_TOTAL':str})

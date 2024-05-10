@@ -7,7 +7,6 @@ import pandas as pd
 corr_estados={"Coahuila de Zaragoza":"Coahuila", "México" : "Estado de México", "Michoacán de Ocampo" : "Michoacán", "Veracruz de Ignacio de la Llave":"Veracruz"}
 estados=["Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua", "Ciudad de México", "Coahuila de Zaragoza", "Colima", "Durango", "México", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Michoacán de Ocampo", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz de Ignacio de la Llave", "Yucatán", "Zacatecas"]
 
-
 conceptos={
     'esquite':['esquite', 'trolelote', 'chasca', 'elote en vaso', 'vasolote', 'elote feliz', 'coctel de elote', 'elote desgranado'], 
     'bolillo':['bolillo', 'birote'], 

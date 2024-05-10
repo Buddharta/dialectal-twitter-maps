@@ -33,17 +33,17 @@ conceptos={
     'hormiga':['hormiga', 'asquel', 'asquilin'], 
     'mosquito':['mosquito','zancudo','chaquiste','chanquiste','moyote'],
     'pavo':['pavo', 'guajolote', 'totole', 'totol', 'chompipe'], 
-    'colibrí':['colibri', 'chupamirto', 'chuparrosa', 'chupaflor'], 
-    'automóvil':['coche', 'automovil', 'carro', 'auto'], 
+    'colibri':['colibri', 'chupamirto', 'chuparrosa', 'chupaflor'], 
+    'automovil':['coche', 'automovil', 'carro', 'auto'], 
     'aguacero':['aguacero', 'chubasco', 'tormenta'], 
-    'habitación':['habitacion', 'alcoba', 'dormitorio', 'recamara'], 
+    'habitacion':['habitacion', 'alcoba', 'dormitorio', 'recamara'], 
     'cobija':['cobija', 'frazada'], 
     'lentes':['lentes', 'anteojo', 'gafas', 'espejuelos'], 
     'rasguño':['rasguño', 'arañazo'], 
     'lagaña':['legaña', 'lagaña', 'chinguiña'], 
-    'comezón':['comezon', 'picazon', 'rasquera', 'rasquiña'],  
-    'cinturón':['cinturon', 'cinto', 'fajo'],  #(bucar fajo con opción “sin billetes” en la expresión regular)
-    'escusado':['retrete', 'escusado', 'inodoro', 'WC'], 
+    'comezon':['comezon', 'picazon', 'rasquera', 'rasquiña'],  
+    'cinturon':['cinturon', 'cinto', 'fajo'],  #(bucar fajo con opción “sin billetes” en la expresión regular)
+    'escusado':['retrete', 'escusado', 'inodoro', 'WC'],
     'brasier':['brasier', 'chichero']  
 }
 
