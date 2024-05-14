@@ -37,7 +37,7 @@ conceptos={
     'automovil':['coche', 'automovil', 'carro', 'auto'], 
     'aguacero':['aguacero', 'chubasco', 'tormenta'], 
     'habitacion':['habitacion', 'alcoba', 'dormitorio', 'recamara'], 
-    'cobija':['cobija', 'frazada'], 
+    'cobija':['cobija', 'frazada', 'cobertor'], 
     'lentes':['lentes', 'anteojo', 'gafas', 'espejuelos'], 
     'rasguño':['rasguño', 'arañazo'], 
     'lagaña':['legaña', 'lagaña', 'chinguiña'], 
@@ -48,7 +48,7 @@ conceptos={
 }
 
 HOME = os.environ["HOME"]
-workdir=os.path.join(HOME,"repos/dialectic-twitter-maps-generator")
+workdir=os.environ["PWD"]
 datadir=os.path.join(workdir,'data')
 
 def make_query(term):
@@ -88,7 +88,7 @@ def make_query(term):
         case "picazon":
             regex = r"\bpicaz[oó]?n[e]?[s]?[\!\?\,\.]?\b"
         case "cinturon":
-            regex = r"\bcintur[oó]?n[e]?[s]?[\!\?\,\.]?\b"
+            regex = r"(?!de seguridad?)\bcintur[oó]?n[e]?[s]?[\!\?\,\.]?\b"
         case "escusado":
             regex = r"\be[sx]?cusado[s]?[\!\?\,\.]?\b"
         case "WC":
@@ -96,9 +96,9 @@ def make_query(term):
         case "brasier":
             regex = r"\bbras[s]?ier[e]?[s]?[\!\?\,\.]?\b"
         case "fajo":
-            regex = r"\fajo[s]?[\!\?\,\.]?\s+(?!billete[s]?)"
+            regex = r"(?!billete[s]?)\bfajo[s]?[\!\?\,\.]?\b"
         case _:
-            regex = fr"\mosquito?[s]?[\!\?\,\.]?\b"
+            regex = fr"\b{term}[e]?[s]?[\!\?\,\.]?\b"
 
     query = {
         "$or" : [

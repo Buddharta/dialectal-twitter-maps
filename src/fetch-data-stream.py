@@ -90,7 +90,7 @@ class query:
             case "picazon":
                 self.regex = r"\bpicaz[oó]?n[e]?[s]?[\!\?\,\.]?\b"
             case "cinturon":
-                self.regex = r"\bcintur[oó]?n[e]?[s]?[\!\?\,\.]?\b"
+                self.regex = r"(de seguridad)\bcintur[oó]?n[e]?[s]?[\!\?\,\.]?\b"
             case "escusado":
                 self.regex = r"\be[sx]?cusado[s]?[\!\?\,\.]?\b"
             case "WC":
@@ -98,7 +98,7 @@ class query:
             case "brasier":
                 self.regex = r"\bbras[s]?ier[e]?[s]?[\!\?\,\.]?\b"
             case "fajo":
-                self.regex = r"\fajo[s]?[\!\?\,\.]?\s+(?!billete[s]?)"
+                self.regex = r"(?!billete[s]?)\bfajo[s]?[\!\?\,\.]?\b"
             case _:
                 self.regex = fr"\b{term}[e]?[s]?[\!\?\,\.]?\b"
 

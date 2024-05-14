@@ -48,6 +48,7 @@ conceptos={
     'brasier':['brasier', 'chichero']  
 }
 
+
 def make_query(term):
     match term:
         case "chasca":
@@ -85,7 +86,7 @@ def make_query(term):
         case "picazon":
             regex = r"\bpicaz[oó]?n[e]?[s]?[\!\?\,\.]?\b"
         case "cinturon":
-            regex = r"\bcintur[oó]?n[e]?[s]?[\!\?\,\.]?\b"
+            regex = r"(?!de seguridad?)\bcintur[oó]?n[e]?[s]?[\!\?\,\.]?\b"
         case "escusado":
             regex = r"\be[sx]?cusado[s]?[\!\?\,\.]?\b"
         case "WC":
@@ -93,9 +94,9 @@ def make_query(term):
         case "brasier":
             regex = r"\bbras[s]?ier[e]?[s]?[\!\?\,\.]?\b"
         case "fajo":
-            regex = r"\fajo[s]?[\!\?\,\.]?\s+(?!billete[s]?)"
+            regex = r"(?!billete[s]?)\bfajo[s]?[\!\?\,\.]?\b"
         case _:
-            regex = fr"\mosquito?[s]?[\!\?\,\.]?\b"
+            regex = fr"\b{term}[e]?[s]?[\!\?\,\.]?\b"
 
     query = {
         "$or" : [
@@ -153,7 +154,7 @@ def write_csv_data(csv_file_path, data):
                 print('File already written. Skipping...')
 
 HOME = os.environ["HOME"]
-workdir=os.path.join(HOME,"repos/dialectic-twitter-maps-generator")
+workdir=os.environ["PWD"]
 datadir=os.path.join(workdir,'data')
 for concept in conceptos:
     conceptdir=os.path.join(datadir,concept)

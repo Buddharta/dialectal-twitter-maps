@@ -20,7 +20,7 @@ conceptos={
     'automovil':['coche', 'automovil', 'carro', 'auto'], 
     'aguacero':['aguacero', 'chubasco', 'tormenta'], 
     'habitacion':['habitacion', 'alcoba', 'dormitorio', 'recamara'], 
-    'cobija':['cobija', 'frazada'], 
+    'cobija':['cobija', 'frazada','cobertor'], 
     'lentes':['lentes', 'anteojo', 'gafas', 'espejuelos'], 
     'rasguño':['rasguño', 'arañazo'], 
     'lagaña':['legaña', 'lagaña', 'chinguiña'], 
