@@ -24,7 +24,7 @@ conceptos={
     'lentes':['lentes', 'anteojo', 'gafas', 'espejuelos'], 
     'rasguño':['rasguño', 'arañazo'], 
     'lagaña':['legaña', 'lagaña', 'chinguiña'], 
-    'comezon':['comezon', 'picazon', 'rasquera', 'rasquiña'],  
+    'comezon':['comezon', 'picazon', 'rasquera', 'rasquina'],  
     'cinturon':['cinturon', 'cinto'],  
     'escusado':['retrete', 'escusado', 'inodoro', 'WC'], 
     'brasier':['brasier', 'chichero']  
